@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre o DOM</title>
+    <style>
+        body {
+            background: rgb(117, 117, 219);
+            color: white;
+            font: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Isso é um teste</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Era uma vez uma casa tão <strong>engraçada</strong> , não tinha teto, não tinha nada.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName
+        ('p')[1]
+        var d = window.document.getElementById('msg')
+        d.InnerText = 'estou livre'
+    </script>
+</body>
+</html>
