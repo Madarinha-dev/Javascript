@@ -4,7 +4,7 @@ let res = document.querySelector('div#resposta')
 let valores = []
 
 function isNumber(n) {
-    if (Number(n) >= 1 && Number(n) <= 100) {
+    if (Number(n) >= 1 && Number(n) <= 100) { //&& = E
         return true
     } else {
         return false
@@ -12,7 +12,7 @@ function isNumber(n) {
 }
 
 function inLista(n, l) {
-    if (l.indexOf(Number(n)) != -1) {
+    if (l.indexOf(Number(n)) != -1) { // ! = Não
         return true
     } else {
         return false
@@ -43,7 +43,7 @@ function finalizar () {
         let menor = valores[0]
         let soma = 0
         let media = 0
-        for (let pos in valores) {
+        for (let pos in valores) { // for c in range(inicio, fim, paso):
             soma += valores[pos]
             if (valores[pos] > maior)
             maior = valores[pos]
